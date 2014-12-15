@@ -17,9 +17,13 @@
         <link rel="stylesheet" type="text/css" href="css/helio_tema.css">
     </head>
     <body ng-controller="ApplicationController as app">
+        <div class="site-header">
+            <a href="/"><img class="logo" src="/img/logo.png" /></a>
+        </div>
+        <navigation-bar> </navigation-bar>
         <ng-view></ng-view>
         <footer class="footer">
-            <small class="text-muted">&reg; 2015 HelioTema | розробка сайту - <a href="https://www.facebook.com/ivato.nazar">nivato</a></small>
+            <small class="text-muted">&reg; 2015 <span class="glyphicon glyphicon-fire"></span> HelioTema | розробка сайту - <a href="https://www.facebook.com/ivato.nazar">nivato</a></small>
         </footer>
     </body>
 </html>
