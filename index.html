@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk" ng-app="HelioTema">
+    <head>
+        <base href="/" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HelioTema</title>
+        <meta name="author" content="Nazar Ivato" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="js/lib/jquery-1.11.1.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/helio_tema.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/helio_tema.css">
+    </head>
+    <body ng-controller="ApplicationController as app">
+        <ng-view></ng-view>
+        <footer class="footer">
+            <small class="text-muted">&reg; 2015 HelioTema | розробка сайту - <a href="https://www.facebook.com/ivato.nazar">nivato</a></small>
+        </footer>
+    </body>
+</html>
