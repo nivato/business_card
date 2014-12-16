@@ -4,11 +4,11 @@
     app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
         $locationProvider.html5Mode(true);
         $routeProvider
-            .when('/', {templateUrl: '/templates/main.html'})
+            .when('/', {templateUrl: '/templates/main.html', controller: 'MainController', controllerAs: 'main'})
             .when('/services', {templateUrl: '/templates/services.html'})
             .when('/aboutus', {templateUrl: '/templates/aboutus.html'})
             .when('/contacts', {templateUrl: '/templates/contacts.html'})
-            .otherwise({templateUrl: '/templates/main.html'});
+            .otherwise({redirectTo: '/'});
     }]);
 
     app.controller('ApplicationController', [function(){
@@ -44,7 +44,14 @@
         });
         this.refresh();
     }]);
-
+    
+    app.controller('MainController', [function(){
+        $('.carousel').carousel({
+            interval: 3000,
+            pause: 'false'
+        });
+    }]);
+    
     app.directive('navigationBar', function(){
         return {
             restrict: 'E',
