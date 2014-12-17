@@ -24,6 +24,8 @@ body > .container, .footer, .list-group-item {
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     background-image: none;
+    background-color: #A0B9D8;
+    border-color: #A0B9D8;
 }
 
 .brand {
