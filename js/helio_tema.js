@@ -12,7 +12,8 @@
     }]);
 
     app.controller('ApplicationController', [function(){
-        console.log('Yey!');
+        var minh = $(window).height() * 0.665;
+        $('#page').css('min-height', minh + 'px');
     }]);
     
     app.controller('NavigationController', ['$scope', '$location', function($scope, $location){
