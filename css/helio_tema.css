@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'heliotema';
+    src:url('/fonts/heliotema.eot?-70auee');
+    src:url('/fonts/heliotema.eot?#iefix-70auee') format('embedded-opentype'),
+        url('/fonts/heliotema.woff?-70auee') format('woff'),
+        url('/fonts/heliotema.ttf?-70auee') format('truetype'),
+        url('/fonts/heliotema.svg?-70auee#icomoon') format('svg');
+}
+
+.icon-heliotema {
+    font-family: 'heliotema';
+}
+
+.icon-heliotema:before {
+    content: "\e600";
+}
+
 body {
     background: url('/img/bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -40,6 +57,10 @@ body > .container, .footer, .list-group-item {
     line-height: normal;
     color: #fff;
     /*background-color: #87D13E;*/
+}
+
+.logo {
+    font-size: 1.5em;
 }
 
 .brand a, .brand a:hover{
