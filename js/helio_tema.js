@@ -16,7 +16,7 @@
 
     app.controller('ApplicationController', [function(){
         var minh = $(window).height() * 0.665;
-        $('#page').css('min-height', minh + 'px');
+        $('.content-wrapper').css('min-height', minh + 'px');
     }]);
     
     app.controller('NavigationController', ['$scope', '$location', function($scope, $location){
